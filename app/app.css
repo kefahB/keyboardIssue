@@ -1,0 +1,43 @@
+﻿@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+Button.-primary {
+  font-size: 18;
+}
+
+.header {
+  background-color: blue;
+
+}
+
+
+.header-title {
+  padding-top: 5;
+  color: rgb(80, 80, 80);
+  font-size: 15;
+  font-weight: bold;
+}
+
+.bottom {
+  height: 100%;
+  background-color: rgb(161, 161, 161);
+
+}
+
+.bottom-input-container {
+  vertical-align: center;
+  horizonal-align: center;
+  color:#fff;
+  font-size: 14;
+}
+
+.bottom-input-textfield {
+  height: 50;
+  background-color: #fff;
+  border-radius: 50%;
+  vertical-align: center;
+  horizonal-align: center;
+  font-size: 14;
+  padding-left: 40;
+  padding-top: 15;
+}

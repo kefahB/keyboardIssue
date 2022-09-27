@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page"
+
+xmlns:IQKeyboardManager="@nativescript/iqkeyboardmanager">
+
+	<GridLayout rows="170, *, 100" columns="*" iosOverflowSafeArea="true">
+		<StackLayout row="0" class="header">
+            <Label text="Header" textWrap="true" />
+		</StackLayout>
+
+		<StackLayout row="1" class="msg-container msgs">
+            <Label text="Msgs here" textWrap="true" />
+            
+		</StackLayout>
+
+		<StackLayout row="2" class="bottom" id="bottom-container" verticalAlignment="center" iosOverflowSafeArea="true" backgroundColor="red">
+            <GridLayout rows="*" columns="*, auto" verticalAlignment="center" class="bottom-input-container">
+                <TextView hint="You msg here..." text="" verticalAlignment="center" textAlignment="left" maxLength="255" class="bottom-input-textfield" textChange="textViewChanged" ios:style="padding-top: 20"/>
+                <Label tap="{{ send }}" col="1" text="send"  id="send-icon" class="fa bottom-icon" textWrap="true" verticalAlignment="center"/>
+            </GridLayout>
+		</StackLayout>
+	</GridLayout>
+</Page>
